@@ -1,0 +1,15 @@
+.shop-title{
+    color: #000000;
+    font-size: 2em;
+    font-family: 'Inconsolable', monospace;
+    text-transform: uppercase;
+    position: absolute;
+    left: 2%;
+    top: 0%;
+    margin: 0;
+}
+.banner {
+    position:absolute;
+    right:0%;
+    top:10%;
+}

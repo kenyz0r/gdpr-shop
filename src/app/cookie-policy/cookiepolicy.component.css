@@ -1,0 +1,19 @@
+.cookies-policy {
+    font-family: 'Inconsolata',monospace;
+}
+.cookies-policy button {
+    font-family: 'Inconsolata',monospace;
+    margin: 0 auto;
+    display: block;
+    font-size:1.5em;
+    color: #000000;
+    background: #ffffff;
+    border-radius: 20px;
+}
+.cookies-policy button:hover {
+    color: #ffffff;
+    background: #000000;
+}
+.component-title {
+    text-align: center;
+}

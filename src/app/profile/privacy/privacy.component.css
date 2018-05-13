@@ -1,0 +1,31 @@
+.component-title {
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+}
+.privacy-container{
+    margin-top:125px;
+    font-family: "Inconsolata", monospace;
+}
+.privacy-subtitle {
+    font-family: "Inconsolata", monospace;
+}
+.checks {
+    display: grid;
+    grid-gap: 10px;
+}
+.checks button {
+    width:25%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
+    border-radius: 20px;
+    color: #000000;
+    background: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+.checks button:hover{
+    color: #ffffff;
+    background: #000000;
+    cursor: pointer;
+    outline: none;
+}

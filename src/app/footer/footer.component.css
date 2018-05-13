@@ -1,0 +1,15 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    position:absolute;
+    bottom: 5%;
+    width:70%;
+    left:25%;
+    font-family: "Inconsolata", monospace;
+    font-size: 1em;
+    text-decoration: underline;
+}
+.footer-container a {
+    cursor: pointer;
+    outline: none;
+}

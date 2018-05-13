@@ -1,0 +1,46 @@
+.login-container {
+    display: grid;
+    width:30%;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-container button {
+    font-family: "Inconsolata",monospace;
+    font-size: 1.5em;
+    color: #000000;
+    background: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    margin-top:10px;
+}
+.login-container button:hover{
+    color: #ffffff;
+    background: #000000;
+    cursor: pointer;
+    outline: none;
+}
+.login-title {
+    text-align: center;
+    font-family: "Inconsolata",monospace;
+}
+.login-subtitle{
+    text-align: center;
+    font-size: 15px;
+    font-family: "Inconsolata", monospace;
+}
+.toggle-center{
+    margin:0 auto;
+}
+
+.informator-container {
+    display: grid;
+    font-family: "Inconsolata", monospace;
+    width: 25%;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+}

@@ -1,0 +1,7 @@
+<h1 class="shop-title">GDPR Shop</h1>
+<img src="assets/gdpr-banner.png" class="banner" *ngIf="!gdprService.displayLoginModal"/>
+<newsletter-view *ngIf="!gdprService.displayLoginModal"></newsletter-view>
+<navigation-view *ngIf="!gdprService.displayLoginModal"></navigation-view>
+<login-view *ngIf="gdprService.displayLoginModal"></login-view>
+<cookie-popup *ngIf="gdprService.displayCookiesPopup"></cookie-popup>
+<footer *ngIf="!gdprService.displayCookiesPopup"></footer>

@@ -1,0 +1,19 @@
+<div class="newsletter-container">
+    <h1 class="newsletter-title">Stay in touch with us!</h1>
+    <p>GDPR Shop would like to stay in touch to send you</p> 
+    <p>promotions and news about the products.</p>
+    <p>You can find details about how we are going to</p>
+    <p>use your data in our <a>Contact Policy</a></p>
+    <div class="entity-container">
+        <button (click)="agreeContact(0)">I would like to receive news from GDPR Shop</button>
+        <button (click)="agreeContact(1)">I would liek to receive news from GDPR Shop Partners</button>
+        <button (click)="denyContact()">I don't want any news from GDPR Shop or its Partners</button>
+    </div>
+    <h1 *ngIf="gdprService.contactAccept">How to contact you?</h1>
+    <div *ngIf="gdprService.contactAccept" class="contact-container">
+        <button (click)="selectContactWay(3)">By Email</button>
+        <button (click)="selectContactWay(4)">By SMS</button>
+        <button (click)="selectContactWay(5)">By Telephone</button>
+    </div>
+    <input *ngIf="methodSelected" class="contact-input" type="text"/>
+</div>

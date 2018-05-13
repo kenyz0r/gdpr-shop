@@ -1,0 +1,22 @@
+<div>
+    <h1 class="component-title">Modify Personal Data</h1>
+    <div class="modify-container">
+        <p>In order to keep your personal data up to date, we recommend you to update your profile periodically.We automatically send notifications to update your profile every 12 months.</p>
+            <mat-form-field class="example-full-width">
+                    <input matInput placeholder="First Name" [(ngModel)]="firstName">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Last Name" [(ngModel)]="lastName">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Email" [(ngModel)]="email">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Telephone" [(ngModel)]="telefon">
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Address" [(ngModel)]="adresa">
+            </mat-form-field>
+            <button class="submit-update" (click)="submitChanges()">Submit</button>
+    </div>
+</div>

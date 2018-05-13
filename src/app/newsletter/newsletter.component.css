@@ -1,0 +1,62 @@
+.newsletter-container {
+    position:absolute;
+    left: 2%;
+    top:18%;
+    font-family: "Inconsolata",monospace;
+}
+
+.entity-container {
+    display: grid;
+    grid-gap : 10px;
+}
+.entity-container button {
+    width: 60%;
+    font-size: 15px;
+    font-family: "Inconsolata", monospace;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.entity-container button:hover {
+    background: #000000;
+    color: #ffffff;
+}
+.entity-container button:disabled{
+    background: #000000;
+    color: #ffffff;
+}
+
+.contact-container {
+    display: grid;
+    grid-gap : 10px;
+}
+
+.contact-container button {
+    width: 60%;
+    font-size: 15px;
+    font-family: "Inconsolata", monospace;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.contact-container button:hover {
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact-container button:disabled {
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact-input {
+    width: 60%;
+    border-radius: 20px;
+    font-size: 15px;
+}

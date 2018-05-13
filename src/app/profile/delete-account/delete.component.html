@@ -1,0 +1,14 @@
+<div>
+        <h1 class="component-title">Delete Your Account</h1>
+        <div class="delete-container">
+                <p>Why you wish to delete your account?</p>
+                <mat-checkbox class="example-margin" [(ngModel)]="checked1" [color]="color">I don't use your website anymore.</mat-checkbox>
+                <mat-checkbox class="example-margin" [(ngModel)]="checked2" [color]="color">I've created the account by mistake.</mat-checkbox>
+                <mat-checkbox class="example-margin" [(ngModel)]="checked3" [color]="color">Other</mat-checkbox>
+                <p>Please re-enter your password if you would like to proceed with account deletion</p>
+                <mat-form-field class="example-full-width">
+                        <input matInput type="password" placeholder="Password" [(ngModel)]="parola">
+                </mat-form-field>
+                <button (click)="deleteAccount()">Delete my account</button>
+        </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="login-container">
+    <h1 class="login-title">{{confirmText}}</h1>
+    <p class="login-subtitle">Login / Register</p>
+    <mat-slide-toggle
+            class="toggle-center"
+            [color]="color"
+            [checked]="gdprService.marketingSelected"
+            [disabled]="disabled"
+            (change)="onToggleLogin()">
+        </mat-slide-toggle>
+        <mat-form-field class="example-full-width" *ngIf="gdprService.registerSelected">
+                <input matInput placeholder="First Name" [(ngModel)]="firstName">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" *ngIf="gdprService.registerSelected">
+                <input matInput placeholder="Last Name" [(ngModel)]="lastName">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+                <input matInput placeholder="Email" [(ngModel)]="email">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" *ngIf="gdprService.registerSelected">
+                <input matInput placeholder="Telephone" [(ngModel)]="telefon">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" *ngIf="gdprService.registerSelected">
+                <input matInput placeholder="Address" [(ngModel)]="adresa">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+                <input type="password" matInput placeholder="Password" [(ngModel)]="password">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" *ngIf="gdprService.registerSelected">
+                <input type="password" matInput placeholder="Confirm Password" [(ngModel)]="confirmPassword">
+        </mat-form-field>
+        <mat-checkbox class="example-margin" *ngIf="gdprService.registerSelected" [(ngModel)]="checked1" [color]="color">I agree the Terms and Conditions of this website.</mat-checkbox>
+        <button (click)="confirmProcedure()">{{confirmText}}</button>
+        <button (click)="cancelLogin()">Cancel</button>
+</div>
+<div class="informator-container">
+    <h1>Why to create an account?</h1>
+    <ul>
+        <li>Check out faster</li>
+        <li>View shopping history</li>
+        <li>Create wishlists</li>
+    </ul>
+    <h1>How we use your data</h1>
+    <p>If you agree to collect information about your browsing history, we can target adds and send customized promotions and discounts to your email address.</p>
+</div>

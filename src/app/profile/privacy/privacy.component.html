@@ -1,0 +1,60 @@
+<div>
+    <h1 class="component-title">Privacy</h1>
+    <div class="privacy-container">
+    <div>
+        <h1 class="privacy-subtitle">Data representation</h1>
+        <p>I want my personal information to be minified when its passed to third party data processors:</p>
+        <p>Only first name will be displayed, partial address, anonymous IP</p>
+            <mat-slide-toggle
+            class="example-margin"
+            [color]="color"
+            [checked]="gdprService.partialDataSelected"
+            [disabled]="disabled"
+            (change)="onTogglePartialData()">
+            </mat-slide-toggle>
+    </div>
+    <div>
+        <h1 class="privacy-subtitle">Marketing</h1>
+        <p>Would you like to receive emails that contains promotions, discounts and other updates about our shop?</p>
+        <mat-slide-toggle
+            class="example-margin"
+            [color]="color"
+            [checked]="gdprService.marketingSelected"
+            [disabled]="disabled"
+            (change)="onToggleMarketing()">
+        </mat-slide-toggle>
+    </div>
+    <div>
+        <h1 class="privacy-subtitle">Profiling</h1>
+        <p>I agree to autocomplete forms with my personal information when needed.</p>
+        <mat-slide-toggle
+            class="example-margin"
+            [color]="color"
+            [checked]="gdprService.profilingAutocompleteSelected"
+            [disabled]="disabled"
+            (change)="onToggleAutocomplete()">
+        </mat-slide-toggle>
+        <p>I agree to receive suggestions of products based on my search history.</p>
+        <mat-slide-toggle
+            class="example-margin"
+            [color]="color"
+            [checked]="gdprService.profilingSuggestionSelected"
+            [disabled]="disabled"
+            (change)="onToggleSuggestion()">
+        </mat-slide-toggle>
+        <p>I agree to match my personal data with third party software.</p>
+        <mat-slide-toggle
+            class="example-margin"
+            [color]="color"
+            [checked]="gdprService.profilingThirdPartySelected"
+            [disabled]="disabled"
+            (change)="onToggleThirdParty()">
+        </mat-slide-toggle>
+    </div>
+    <div class="checks">
+        <h1 class="privacy-subtitle">Other</h1>
+        <button (click)="requestCopy()">I want to receive a copy of my data</button>
+        <button (click)="checkProcessing()">I want to check if my data is beeing processed</button>
+    </div>
+    </div>
+</div>

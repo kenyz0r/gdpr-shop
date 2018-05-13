@@ -1,0 +1,8 @@
+<div class="profile-container">
+   <profile-nav></profile-nav>
+   <div>
+        <privacy-view *ngIf="gdprService.dataProcessingClicked"></privacy-view>
+        <modify-profile *ngIf="gdprService.modifyProfileClicked"></modify-profile>
+        <delete-view *ngIf="gdprService.deleteAccountClicked"></delete-view>
+   </div>
+</div>

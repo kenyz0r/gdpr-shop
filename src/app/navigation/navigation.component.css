@@ -1,0 +1,26 @@
+.navigation-container {
+    position: absolute;
+    top: 0%;
+    right:2%;
+    margin-top: 15px;
+    width:30%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.navigation-container button {
+    background: transparent;
+    color: #000000;
+    font-size: 1.5em;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.navigation-container button:hover {
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}

@@ -1,0 +1,28 @@
+.component-title {
+    font-family: "Inconsolata", monospace;
+    text-align: center;
+}
+.delete-container {
+    display: grid;
+    font-family: "Inconsolata", monospace;
+    width: 40%;
+    margin:0 auto;
+    margin-top: 120px;
+}
+
+.delete-container button {
+    font-family: "Inconsolata", monospace;
+    font-size: 1.5em;
+    border-radius: 20px;
+    color: #000000;
+    background: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete-container button:hover {
+    color: #ffffff;
+    background: #000000;
+    cursor: pointer;
+    outline: none;
+}
